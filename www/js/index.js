@@ -34,9 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-    },
-    fnc_face_to_face:function(){
-      var xmlhttp=new XMLHttpRequest();
+              var xmlhttp=new XMLHttpRequest();
       xmlhttp.open("GET", "https://opentokrtc.com/cordova.json", false);
       xmlhttp.send();
       var data = JSON.parse( xmlhttp.response );
